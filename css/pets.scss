@@ -1,0 +1,156 @@
+@import "../css/variables.scss";
+
+.pets{
+    margin-top: 36px;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 140px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    
+    &__filter{
+        display: flex;
+        flex-direction: column;
+
+        &-block{
+
+            &-title{
+                width: 160px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                margin-bottom: 15px;
+                margin-top: 26px;
+                cursor: pointer;
+
+                &:first-child{
+                    margin-top: 0;
+                }
+
+                h5{
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+
+            &-list{
+                flex-direction: column;
+                gap: 15px;
+
+                input[type="checkbox"] {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    padding: 13px;
+                    background-color: $white;
+                    border-radius: 7px;
+                    border: 1px solid $red;
+                }
+                
+                label{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                input[type="checkbox"]:checked {
+                    background-color: $red;
+                    padding: 4px;   
+                }
+                
+                input[type="checkbox"]:checked::before {
+                    content: "\2713";
+                    color: white;
+                    padding: 2px 4px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &__catalog{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        &-card{
+            width: 260px;
+            height: 216px;
+            
+            a{
+                display: flex;
+            }
+
+            &-info{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                margin-top: 181px;
+                margin-left: 16px;
+            }
+
+            img{
+                position: absolute;
+                width: 260px;
+                height: 216px;
+                border-radius: 20px;
+                z-index: -99;
+                object-fit: cover;
+            }
+
+            h4{
+                @include h4;
+                color: $white;
+            }
+
+            p{
+                font-size: 10px;
+                color: $white;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            &-like{
+                position: absolute;
+                margin-top: 12px;
+                margin-left: 228px;
+                z-index: 99;
+
+                img{
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 0;
+                }
+            }   
+
+            &-btn-arrow{
+                @include btn-arr;
+                border-color: #ffffff00;
+                background-color: $white;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                margin-top: 181px;
+                margin-left: 226px;
+
+                div{
+                    background-color: $black;
+                    width: 14px;
+                    left: 3px;
+
+                    &::after {
+                        background-color: $black;
+                    }
+
+                    &::before{
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+

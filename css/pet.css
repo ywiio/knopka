@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #282828;
+}
+
+.pet {
+  margin-top: 36px;
+}
+.pet h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.pet__info {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.pet__info-slider {
+  width: 500px;
+}
+.pet__info-slider img {
+  width: inherit;
+  border-radius: 20px;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pet__info-block-like {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 532px;
+}
+.pet__info-block-like img {
+  width: 22px;
+  height: 22px;
+  border-radius: 0;
+}
+.pet__info-block button {
+  border-radius: 24px;
+  border-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #BE2A2F;
+  color: #FFFFFF;
+  width: 100%;
+  height: 48px;
+  margin-top: 30px;
+}
+.pet__info-block-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 27px;
+}
+.pet__info-block-tags-tag {
+  border-radius: 32px;
+  background-color: rgba(188, 188, 188, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  margin-top: -10px;
+}
+.pet__info-block-tags-tag p {
+  margin-right: 20px;
+  text-transform: lowercase;
+}
+.pet__info-block-tags-tag div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.pet__info-block-tags-tag div img {
+  margin-left: 3px;
+}
+.pet__info-block-tags-tag div p {
+  color: rgba(63, 63, 63, 0.8196078431);
+  text-transform: capitalize;
+}
+.pet__opeka {
+  width: 70%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 20px;
+  border: 1px solid #282828;
+}
+.pet__opeka-title {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.pet__opeka-title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.pet__opeka-title img {
+  width: 66px;
+  height: 44px;
+  border-radius: 50px;
+}
+.pet__opeka form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pet__opeka form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 360px;
+}
+.pet__opeka form div label {
+  margin-bottom: 10px;
+}
+.pet__opeka form div input {
+  height: 40px;
+  width: 360px;
+  padding-left: 18px;
+  border-radius: 20px;
+  border: 1px solid #282828;
+}
+.pet__opeka form div input:active {
+  border: 1px solid #BE2A2F;
+}
+.pet__opeka form div:last-of-type {
+  width: 92%;
+}
+.pet__opeka form div:last-of-type textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  border: 1px solid #282828;
+  padding: 12px 18px;
+}
+.pet__opeka-btn {
+  width: 80%;
+  height: 40px;
+  border-radius: 24px;
+  border-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #BE2A2F;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.vaccination img, .treatment img {
+  margin: 0 14px 0 24px;
+}
+.vaccination p, .treatment p {
+  text-transform: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  height: 40px;
+  width: 360px;
+  padding-left: 18px;
+  padding-top: 8px;
+  border-radius: 20px;
+  border: 1px solid #282828;
+}
+.custom-file-upload:hover {
+  background-color: #BE2A2F;
+  color: #FFFFFF;
+}/*# sourceMappingURL=pet.css.map */

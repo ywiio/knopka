@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #282828;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+.header__logo {
+  cursor: pointer;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+.header__menu li {
+  list-style-type: none;
+}
+.header__menu li a:hover {
+  color: #BE2A2F;
+}
+.header__btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+}
+.header__btns__help {
+  border-radius: 24px;
+  border-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #BE2A2F;
+  color: #FFFFFF;
+  width: 160px;
+  font-size: 12px;
+}
+.header__btns__avatar {
+  border: 2px solid #BE2A2F;
+  border-radius: 100px;
+  padding: 9px 6px 7px;
+}
+.header__btns__avatar:hover {
+  background-color: #BE2A2F;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #282828;
+  font-size: 12px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 104px;
+}
+.footer__menu-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer__menu-col-headlink {
+  color: rgba(255, 255, 255, 0.8039215686);
+  margin-bottom: 8px;
+}
+.footer__menu-col-headlink a {
+  color: rgba(255, 255, 255, 0.8039215686);
+}
+.footer__menu-col li {
+  list-style-type: none;
+  margin-top: 12px;
+}
+.footer__menu-col li a {
+  color: #FFFFFF;
+}
+.footer__newsletter {
+  display: flex;
+  justify-content: space-around;
+  height: 148px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.footer__newsletter-absolut {
+  position: absolute;
+  margin: 36px 250px 0 0;
+}
+.footer__newsletter-info {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__newsletter-info p {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer__newsletter-form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.footer__newsletter-form input {
+  height: 40px;
+  width: 27.9em;
+  min-width: 282px;
+  padding-left: 18px;
+  font-size: 16px;
+  border: 1px solid #282828;
+  border-radius: 20px;
+}
+.footer__newsletter-form input:focus {
+  border: 1px solid #BE2A2F;
+}
+.footer__newsletter-btn-arrow {
+  cursor: pointer;
+  position: relative;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: #282828;
+}
+.footer__newsletter-btn-arrow div {
+  position: relative;
+  top: 1px;
+  width: 24px;
+  height: 2px;
+  background-color: #FFFFFF;
+  left: 8px;
+  display: block;
+  transform: rotate(-45deg);
+  border-radius: 20px;
+}
+.footer__newsletter-btn-arrow div::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: -3px;
+  right: -2px;
+  background-color: #FFFFFF;
+  transform: rotate(45deg);
+  border-radius: 20px;
+}
+.footer__newsletter-btn-arrow div::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 3px;
+  right: -2px;
+  background-color: #FFFFFF;
+  transform: rotate(-45deg);
+  border-radius: 20px;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contacts-main {
+  display: flex;
+  gap: 140px;
+}
+.footer__contacts-social p:first-child {
+  color: rgba(255, 255, 255, 0.8039215686);
+}
+.footer__contacts-link {
+  display: flex;
+  gap: 20px;
+}
+.footer__contacts-link p, .footer__contacts-link a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.footer__terms-of-use {
+  margin-bottom: 10px;
+}
+.footer__terms-of-use p {
+  margin-bottom: 14px;
+  color: #FFFFFF;
+}
+.footer__terms-of-use a {
+  color: rgba(255, 255, 255, 0.8039215686);
+}/*# sourceMappingURL=main.css.map */

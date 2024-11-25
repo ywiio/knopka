@@ -1,0 +1,211 @@
+@import "../css/variables.scss";
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none; 
+    background-color: $white;
+    cursor: pointer;
+}
+
+.container{
+    // width: 80.6%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+
+    &__logo{
+        cursor: pointer;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 36px;
+
+        li{
+            list-style-type: none;
+            a{                
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    &__btns{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+
+        &__help{
+            @include btn;
+            background-color: $red;
+            color: $white;
+            width: 160px;
+            font-size: 12px;
+        }
+
+        &__avatar{
+            border: 2px solid $red;
+            border-radius: 100px;
+
+            padding: 9px 6px 7px;
+
+            &:hover{
+                background-color: $red;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: $black;
+    font-size: 12px;
+    // margin-bottom: 0px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        gap: 104px;
+
+        &-col{
+            display: flex;
+            flex-direction: column;
+
+            &-headlink{
+                color: #ffffffcd;
+                margin-bottom: 8px;
+                a{
+                    color: #ffffffcd;
+                }
+            }
+
+            li{
+                list-style-type: none;
+                margin-top: 12px;
+
+                a{
+                    color: $white;
+                }
+            }
+            
+        }
+    }
+    
+    &__newsletter{
+        display: flex;
+        justify-content: space-around;
+        height: 148px;
+
+        background-color: $white;
+        border-radius: 20px;  
+
+        &-absolut{
+            position: absolute;
+            margin: 36px 250px 0 0;
+        }
+
+        &-info{
+            display: flex;
+            align-items: flex-end;
+
+            p{
+                text-transform: uppercase;
+                margin-bottom: 24px;
+
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        &-form{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+    
+            input{
+                height: 40px;
+                width: 27.9em;
+                min-width: 282px;
+                padding-left: 18px;
+                font-size: 16px;
+
+                border: 1px solid $black;
+                border-radius: 20px;
+
+                &:focus{
+                    border: 1px solid $red;
+                }
+            }
+        }
+
+        &-btn-arrow{
+            @include btn-arr;
+            border-color:#ffffff00;
+            background-color: $black;
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        justify-content: space-between;
+
+        &-main{
+            display: flex;
+            gap: 140px;
+        }
+
+        &-social{
+            p:first-child{
+                color: #ffffffcd;
+            }
+        }
+
+        &-link{
+            display: flex;
+            gap: 20px;
+
+            p,a{
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    &__terms-of-use{
+        margin-bottom: 10px;
+        p{
+            margin-bottom: 14px;
+            color: $white;
+        }
+        a{
+            color: #ffffffcd;
+        }
+    }
+}
